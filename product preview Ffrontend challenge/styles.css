@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:ital,wght@0,700;1,500&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card{
+    background-color: #fff;
+    width: 470px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+ .picture1 img{
+    width: 100%;
+}
+ .picture1{
+    width: 50%;
+    margin: 0;
+    display: flex;
+}
+
+.container{
+    width: 40%;
+    margin: 0.5rem 0 0  1.5rem  ;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+button{
+    width: 100%;
+    background:hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    border-radius: 5px;
+    border: none;
+    gap: .5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+button:hover{
+    transform: scale(.95);
+    background: hsl(157, 50%, 16%);
+    cursor: pointer;
+}
+.container img{
+    width: 13px;
+}
+
+.container h2{
+    font-size: 9px;
+    opacity: 30%;
+    letter-spacing: 3px;
+    font-family: 'Montserrat';
+}
+
+.container h3{
+    font-size: 24px;
+    padding: 1rem 0;
+    width: 150px;
+    font-weight: bolder;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    line-height: 25px;
+}
+
+.container p{
+    font-size: 12px;
+    padding: 0 0  1rem 0;
+    line-height: 16px;
+    opacity: 60%;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-weight:900;
+    padding-bottom: 1.2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Fraunces';
+}
+
+span{
+    color: gray;
+    font-size: 10px;
+    text-decoration: line-through;
+    font-weight:lighter;
+}
+
+
+
+/*-----breakpoints-----*/
+
+@media (max-width:420px){
+
+    body{
+        padding: 1rem ;
+    }
+
+    .card{
+        width: 98%;
+        height: 100%;
+        display:block;
+        flex-direction: column;
+    }
+
+    section .picture1 {
+        width: 100%;
+        height: 40%;
+    }
+
+    section .picture1 img{
+        content: url(images/image-product-mobile.jpg);
+    }
+
+    .container .picture{
+        width: 13px;
+        height: 13px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        width: 90%;
+        padding: 2rem .5rem;
+    }
+
+    .container h2{
+        padding-top: 1rem;
+    }
+
+    .container h3{
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .container p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        width: 96%;
+    }
+
+    button{
+        margin-bottom: 2rem;
+    }
+
+    .price{
+        padding-top: 1rem;
+    }
+
+}
